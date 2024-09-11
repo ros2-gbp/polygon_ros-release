@@ -1,3 +1,30 @@
+## polygon_ros (jazzy) - 1.1.0-1
+
+The packages in the `polygon_ros` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release -r jazzy polygon_ros -y` on `Wed, 11 Sep 2024 17:40:05 -0000`
+
+These packages were released:
+- `polygon_demos`
+- `polygon_msgs`
+- `polygon_rviz_plugins`
+- `polygon_utils`
+
+Version of package(s) in repository `polygon_ros`:
+
+- upstream repository: https://github.com/MetroRobots/polygon_ros
+- release repository: https://github.com/ros2-gbp/polygon_ros-release.git
+- rosdistro version: `1.0.2-3`
+- old version: `1.0.2-3`
+- new version: `1.1.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.24.0`
+- rosdistro version: `0.9.1`
+- vcstools version: `0.1.42`
+
+
 ## polygon_ros (iron) - 1.1.0-1
 
 The packages in the `polygon_ros` repository were released into the `iron` distro by running `/usr/bin/bloom-release -r iron polygon_ros -y` on `Wed, 11 Sep 2024 17:34:44 -0000`
