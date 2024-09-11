@@ -17,7 +17,7 @@ This led to the creation of the new messages defined in this package. This work 
  * `Polygon2DStamped` is a single simple polygon with a header.
  * `ComplexPolygon2D` defines a complex polygon with one polygon that is the outer perimeter, and an arbitrary number of polygons that define the holes.
  * `Polygon2DCollection` is a list of simple polygons, all with the same frame. There is also an optional per-polygon colors field for display purposes.
- * Simiarly, `ComplexPolygon2DCollection` is a list of complex polygons, also with a header, and an optional colors field.
+ * Similarly, `ComplexPolygon2DCollection` is a list of complex polygons, also with a header, and an optional colors field.
 
 ## Polygon Utils
 The `polygon_utils` package provides a number of tools for working with `polygon_msgs`.
@@ -35,6 +35,11 @@ Note that when converting from `geometry_msgs` to `polygon_msgs`, any informatio
  * `movePolygonToPose` - translate and rotate a polygon
  * `isInside` - check if a point is inside a polygon
   * `triangulate` - Decompose a polygon into a set of non-overlapping triangles using an open source implementation of the [earcut algorithm](https://github.com/mapbox/earcut.hpp)
+
+### Python
+There are also a few Python-based utility operations available.
+ * `polygon_utils.shapely_lib.py` provides conversions from ROS messages to [Shapely](https://shapely.readthedocs.io/en/stable/manual.html) objects, enabling a large library of algorithms to be run. **Note: Requires `shapely` to be installed via `pip`.**
+ * `polygon_utils.shortest_path.py` provides methods for determining the shortest path around a collection of polygons. (also uses `shapely_lib`)
 
 ## RViz Plugins
 
