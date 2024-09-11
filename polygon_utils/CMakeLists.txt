@@ -16,6 +16,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(polygon_msgs REQUIRED)
 
@@ -29,6 +30,15 @@ ament_target_dependencies(polygon_utils
   geometry_msgs
 )
 
+if(BUILD_TESTING)
+  find_package(ament_cmake_pytest REQUIRED)
+  ament_add_pytest_test(short_path test/test_shortest_path.py
+    APPEND_ENV PYTHONPATH=${CMAKE_CURRENT_BINARY_DIR}
+    TIMEOUT 5
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+  )
+endif()
+
 install(TARGETS polygon_utils
         EXPORT export_polygon_utils
         ARCHIVE DESTINATION lib
@@ -38,6 +48,7 @@ install(TARGETS polygon_utils
 install(DIRECTORY include/
         DESTINATION include
 )
+ament_python_install_package(${PROJECT_NAME})
 ament_export_include_directories(include)
 ament_export_targets(export_polygon_utils)
 
