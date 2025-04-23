@@ -1,0 +1,12 @@
+Source: ros-kilted-polygon-rviz-plugins
+Section: misc
+Priority: optional
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kilted-ament-cmake-ros, ros-kilted-color-util, ros-kilted-geometry-msgs, ros-kilted-pluginlib, ros-kilted-polygon-msgs, ros-kilted-polygon-utils, ros-kilted-rviz-common, ros-kilted-std-msgs, ros-kilted-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kilted-polygon-rviz-plugins
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kilted-color-util, ros-kilted-geometry-msgs, ros-kilted-pluginlib, ros-kilted-polygon-msgs, ros-kilted-polygon-utils, ros-kilted-rviz-common, ros-kilted-std-msgs, ros-kilted-ros-workspace
+Description: RViz visualizations for polygons
