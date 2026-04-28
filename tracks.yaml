@@ -156,5 +156,4 @@ tracks:
     ros_distro: rolling
     vcs_type: git
     vcs_uri: https://github.com/MetroRobots/polygon_ros
-    version: 1.3.0
-    version_saved: :{auto}
+    version: :{auto}
