@@ -1,0 +1,12 @@
+Source: ros-lyrical-polygon-demos
+Section: misc
+Priority: optional
+Maintainer: David V. Lu!! <david@metrorobots.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lyrical-ament-cmake, ros-lyrical-angles, ros-lyrical-color-util, ros-lyrical-geometry-msgs, ros-lyrical-polygon-msgs, ros-lyrical-polygon-rviz-plugins, ros-lyrical-polygon-utils, ros-lyrical-rclcpp, ros-lyrical-rviz-common, ros-lyrical-rviz-default-plugins, ros-lyrical-rviz2, ros-lyrical-ros-workspace
+Homepage: https://index.ros.org/p/polygon_demos/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-polygon-demos
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-angles, ros-lyrical-color-util, ros-lyrical-geometry-msgs, ros-lyrical-polygon-msgs, ros-lyrical-polygon-rviz-plugins, ros-lyrical-polygon-utils, ros-lyrical-rclcpp, ros-lyrical-rviz-common, ros-lyrical-rviz-default-plugins, ros-lyrical-rviz2, ros-lyrical-ros-workspace
+Description: Demo of polygon_rviz_plugins
